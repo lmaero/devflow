@@ -1,3 +1,6 @@
+import MobileNav from '@/components/shared/navbar/MobileNav'
+import Theme from '@/components/shared/navbar/Theme'
+import GlobalSearch from '@/components/shared/search/GlobalSearch'
 import { SignedIn, UserButton } from '@clerk/nextjs'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -16,9 +19,9 @@ function Navbar() {
           Dev <span className='text-primary-500'>Overflow</span>
         </p>
       </Link>
-      {/*Global Search*/}
+      <GlobalSearch />
       <div className='gap-5 flex-between'>
-        Theme
+        <Theme />
         <SignedIn>
           <UserButton
             afterSignOutUrl='/'
@@ -28,7 +31,7 @@ function Navbar() {
             }}
           />
         </SignedIn>
-        MobileNav
+        <MobileNav />
       </div>
     </nav>
   )
