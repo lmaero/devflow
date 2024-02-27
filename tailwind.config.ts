@@ -40,7 +40,7 @@ module.exports = {
       },
       fontFamily: {
         inter: ['var(--font-inter)'],
-        spaceGrotesk: ['var(--font-spaceGrotesk)'],
+        grotesk: ['var(--font-grotesk)'],
       },
       boxShadow: {
         'light-100':
