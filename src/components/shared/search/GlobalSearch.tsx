@@ -15,7 +15,7 @@ function GlobalSearch() {
         <Input
           type='text'
           placeholder='Search anything globally...'
-          value=''
+          // value=''
           className='border-none shadow-none outline-none paragraph-regular no-focus placeholder background-light800_darkgradient'
         />
       </div>

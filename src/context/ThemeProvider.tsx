@@ -2,7 +2,7 @@
 
 import React, {
   createContext,
-  ReactNode,
+  type ReactNode,
   useContext,
   useEffect,
   useState,
