@@ -1,7 +1,7 @@
 import type { Config } from 'tailwindcss'
 
 const config: Config = {
-  content: ['./src/app/**/*.{js,ts,jsx,tsx,mdx}'],
+  content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],
   darkMode: ['class'],
   plugins: [require('tailwindcss-animate')],
   theme: {
@@ -11,8 +11,8 @@ const config: Config = {
         'auth-light': 'url("/images/auth-light.png")',
       },
       borderRadius: {
-        '1.5': '6px',
         '2': '8px',
+        '1.5': '6px',
         lg: 'var(--radius)',
         md: 'calc(var(--radius) - 2px)',
         sm: 'calc(var(--radius) - 4px)',

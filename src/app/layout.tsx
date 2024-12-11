@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
 import './globals.css'
+import { Navbar } from '@/components/navigation/navbar'
 import { ThemeProvider } from '@/context/Theme'
 import type { ReactNode } from 'react'
 
@@ -19,7 +20,7 @@ const spaceGrotesk = localFont({
 export const metadata: Metadata = {
   title: 'DevFlow',
   description:
-    'A community-driven platform for asking and answering programming questions. Get help, share knowledge, and collaborate with developers from around the world. Explore topics in web development, mobile app development, algorithms, data structures, and more.',
+    'A community-driven platform for asking and answering programming questions. Get help, share knowledge, and collaborate with developers from around the world.',
   icons: {
     icon: '/images/site-logo.svg',
   },
@@ -41,6 +42,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <Navbar />
           {children}
         </ThemeProvider>
       </body>
