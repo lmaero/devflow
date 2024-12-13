@@ -1,3 +1,4 @@
+import { MobileNavigation } from '@/components/navigation/navbar/MobileNavigation'
 import { Theme } from '@/components/navigation/navbar/Theme'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -21,6 +22,7 @@ export function Navbar() {
       <p>Global Search</p>
       <div className='flex-between gap-5'>
         <Theme />
+        <MobileNavigation />
       </div>
     </nav>
   )
